@@ -1,0 +1,233 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    font-family: tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+html { height: 100%; }
+body { 
+    height: 100%; 
+    overflow: hidden;
+}
+
+.container {
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    background: black;
+}
+.chatbox {
+    padding: 15px;
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    left: 75%;
+    background: #202020;
+}
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 10%;
+    transition: 0.3s ease-in-out;
+}
+.userinfo #currentNum {
+    font-size: 18px;
+    color: #ffffff;
+}
+.userinfo .user-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    height: 90%;
+    transition: 0.3s ease-in-out;
+}
+.user {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 50%;
+    margin-top: 10px;
+}
+.user .user-photo {
+    width: 35px;
+    height: 35px;
+    background-color: dimgray;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.user .user-photo img { width: 100%; }
+
+.user .user-name {
+    padding: 10px;
+    margin-left: 3%;
+    width: 72%;
+    font-size: 14px;
+    color: #ffffff;
+    word-wrap: break-word
+}
+.chatlogs {
+    width: 100%;
+    height: 65%;
+    margin-top: 5%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    transition: 0.3s ease-in-out;
+}
+.chatlogs::-webkit-scrollbar { width: 1px; }
+
+.chat {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.chat .user-photo {
+    width: 35px;
+    height: 35px;
+    background-color: dimgray;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.chat .user-photo img { width: 100%; }
+
+.chat .chat-message {
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    font-size: 14px;
+    word-wrap: break-word;
+}
+.friend .chat-message { 
+    text-align: left;
+    margin-left: 3%;
+    background-color: darkslategray; 
+    color: #ffffff;
+}
+.self .chat-message { 
+    text-align: right;
+    margin-left: 13%;
+    background-color: #333; 
+    color: #ffffff;
+}
+.server .chat-message { 
+    text-align: center;
+    margin-left: 8%;
+    background-color:black;
+    color: #ffe602;
+}
+.otserver .chat-message { 
+    opacity:0.5;
+    text-align: left;
+    margin-left: 3%;
+    background-color: darkslategray; 
+    color: #ffffff;
+}
+
+.chat-form { margin-top: 20px; }
+
+.chat-form input {
+    width: 100%;
+    height: 20%;
+    background-color: #fbfbfb;
+    border: none;
+    border-radius: 4px;
+    resize: none;
+    padding: 5px;
+    font-size: 16px;
+    color: #333;
+}
+.chat-form textarea {
+    width: 100%;
+    height: 80%;
+    background-color: #fbfbfb;
+    border: none;
+    border-radius: 2px;
+    resize: none;
+    padding: 5px;
+    font-size: 16px;
+    color: #333;
+}
+.chat-form textarea::-webkit-scrollbar { width: 10px; }
+.chat-form textarea::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgb(32, 32, 32, .1);
+}
+
+.center
+{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.center #controltext {
+    font-size: 18px;
+    color: #ffffff;
+}
+input[type="checkbox"]
+{
+    position: relative;
+    margin-left: 40px;
+    width: 120px;
+    height: 40px;
+    -webkit-appearance: none;
+    background: linear-gradient(0deg, #333, #000);
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, 
+        inset 0 0 10px rgba(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), 
+        inset 0 0 15px rgba(0,0,0,.2);
+}
+input:checked[type="checkbox"]
+{
+    background: linear-gradient(0deg, #6dd1ff, #20b7ff);
+    box-shadow: 0 0 2px #6dd1ff, 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, 
+        inset 0 0 10px rgba(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), 
+        inset 0 0 15px rgba(0,0,0,.2);
+}
+input[type="checkbox"]:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 40px;
+    background: linear-gradient(0deg, #000, #6b6b6b);
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px, #232323;
+    transform: scale(.98, .96);
+    transition: .5s;
+}
+input:checked[type="checkbox"]:before
+{
+    left: 40px;
+}
+input[type="checkbox"]:after
+{
+    content: '';
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 65px;
+    width: 4px;
+    height: 4px;
+    background: linear-gradient(0deg, #6b6b6b, #000);
+    border-radius: 50%;
+    transition: .5s;
+}
+input:checked[type="checkbox"]:after
+{
+    background: #63cdff;
+    left: 105px;
+    box-shadow: 0 0 5px #13b3ff, 0 0 15px #13b3ff;
+}
+
+#video {
+    width: 100%;
+    height: 100%;
+}

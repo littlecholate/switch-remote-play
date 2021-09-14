@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/nbar.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Welcome to this website </div>
+        <nav>
+            <ul>
+                <li><a href="javascript: void(0)" onclick="route('index')">Home</a></li>
+                <li><a href="javascript: void(0)" onclick="route('index')">Team</a></li>
+                <li><a href="javascript: void(0)" onclick="route('index')">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>Viewer</h2>
+                <p>Currently someone is playing, let's have fun together.</p>
+                <a href="javascript: void(0)" onclick="route('view')">Let's Go</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function route(place) {
+            //var token = window.location.href.toString().split('#')[1];
+            if (place == "index") window.location.href = "index.html";
+            if (place == "view") window.location.href = "view.html";
+        }
+    </script>
+</body>
+
+</html>

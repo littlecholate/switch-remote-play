@@ -1,0 +1,19 @@
+{
+  "name": "cholatetv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "aws-iot-device-sdk": "^2.2.11",
+    "aws-sdk": "^2.987.0",
+    "express": "^4.17.1",
+    "socket.io": "^4.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "cholate",
+  "license": "ISC"
+}

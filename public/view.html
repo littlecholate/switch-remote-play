@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Viewer</title>
+	<link rel="stylesheet" type="text/css" href="css/view.css">
+</head>
+
+<body>
+    <div class="container">
+        <video id="video" playsinline autoplay controls muted></video>
+    </div>
+
+    <div class="chatbox">
+        <div class="userinfo" id="userinfo">
+            <span id="currentNum"></span>
+            <div class="user-content" id="user-content"></div>
+        </div>
+
+        <div class="chatlogs" id="chatlogs"></div>
+
+        <div class="chat-form"><textarea id="message"></textarea></div>
+
+        <div class="center">
+            <span id="controltext">Control Button</span>
+            <input id="controlbox" type="checkbox" name="">
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="js/play.js"></script>
+    <script type="module" src="js/view.js"></script>
+</body>
+
+</html>

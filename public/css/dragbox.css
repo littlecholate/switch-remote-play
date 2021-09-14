@@ -1,0 +1,109 @@
+.navigation
+{
+    position: absolute;
+    top: 20px;
+    left: 77%;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    transition: width 0.5s, height 0.5s;
+    transition-delay: 0s, 0.75s;
+    z-index: 100000;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.navigation.active
+{
+    width: 270px;
+    height: 350px;
+    transition: height 0.5s, width 0.5s;
+    transition-delay: 0s, 0.75s;
+}
+.navigation .toggle
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: #ff4081;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.navigation .toggle.active
+{
+    background: #2196f3;
+}
+.navigation .toggle::before
+{
+    content: '+';
+    position: absolute;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-weight: 400;
+    transition: 0.5s;
+}
+.navigation .toggle.active::before
+{
+    transform: rotate(315deg);
+}
+.navigation ul
+{
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+.navigation ul li
+{
+    position: relative;
+    list-style: none;
+    width: 100%;
+}
+.navigation ul li:hover
+{
+    background: #03a9f4;
+}
+.navigation ul li a
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #154367;
+}
+.navigation ul li a .icon
+{
+    position: relative;
+    display: block;
+    min-width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.navigation ul li a .icon .fa
+{
+    font-size: 24px;
+    color: #154367;
+}
+.navigation ul li a .title
+{
+    position: relative;
+    display: block;
+    line-height: 50px;
+    text-align: start;
+    white-space: nowrap;
+}
+.navigation ul li:hover a .icon .fa,
+.navigation ul li:hover a .title
+{
+    color: #fff;
+}
