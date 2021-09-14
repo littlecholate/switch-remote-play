@@ -1,4 +1,4 @@
-## Switch Remote Play (Play with friends living in different cities)
+## Nitendo Switch Remote Play (Play with friends living in different cities)
 
 This project is inspired by the github project [Switch Remote Play](https://github.com/juharris/switch-remoteplay) 
 and this article [Building a WebRTC video broadcast using Javascript](https://gabrieltanner.org/blog/Webrtc-video-broadcast)
