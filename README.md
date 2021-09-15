@@ -24,7 +24,7 @@ I also was studying about real-time video streaming recently and when I saw the 
 
 ## Getting Started
 
-System Overview (refer to juharris's system architecture):
+### System Overview (refer to juharris's system architecture):
 ```
 Website <=====> Linux machine <--Bluetooth--> Switch
    ^                                             |
