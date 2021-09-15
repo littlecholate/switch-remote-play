@@ -6,7 +6,7 @@ and this article [Building a WebRTC video broadcast using Javascript](https://ga
 The goal of the project is to let you or your friends play Nitendo Switch remotely via another device with a keyboard.
 The only thing your friends need is a computer with internet (no need to install any packages).
 
-[Switch Remote Play](https://github.com/juharris/switch-remoteplay) already offer the ability to do so, however after Switch firmware update to 12.0.0, [joycontrol](https://github.com/mart1nro/joycontrol)(software-based controller emulator used in the project) used in that project is not working at all. 
+[Switch Remote Play](https://github.com/juharris/switch-remoteplay) already offer the ability to do so, however after Switch firmware update to 12.0.0, [joycontrol](https://github.com/mart1nro/joycontrol)(software-based controller emulator) used in that project is not working at all. 
 
 I also was studying about real-time video streaming recently and when I saw the WebRTC protocol, I thought **this is the perfect chance to try building up a remote gaming system**.
 
